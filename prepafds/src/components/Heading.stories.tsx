@@ -37,11 +37,16 @@ export const CustomComponent: StoryObj<HeadingProps> = {
     args:{
         asChild: true,
         children:(
-            <p>Passe um elemento ou componente react como Heading</p>
+            <h1>Passe um elemento ou componente react como Heading - Exemplo com H1</h1>
         ),
     },
     argTypes: {
         children:{
+            table:{
+                disable:true,
+            }
+        },
+        asChild: {
             table:{
                 disable:true,
             }
