@@ -5,13 +5,13 @@ export default {
   ],
   theme: {
     fontSize: {
-      '2xs': 12,
-      xs: 14,
-      sm: 16,
-      md: 18,
-      lg: 20,
-      xl: 24,
-      '2xl': 32,
+      xs: 12,
+      sm: 14,
+      md: 16,
+      lg: 18,
+      xl: 20,
+      '2xl': 24,
+      '3xl': 32,
     },
     colors: {
       //Visual Identity Colors
