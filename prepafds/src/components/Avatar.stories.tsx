@@ -6,7 +6,7 @@ export default {
     component: Avatar,
     tags: ['autodocs'],
     args: {
-        image:'./public/assets/userIcon.svg',
+        image:'./assets/userIcon.svg',
         size:'md',
     },
     argTypes:{
@@ -36,6 +36,12 @@ export const Small: StoryObj<Props> = {
 export const Large: StoryObj<Props> = {
     args:{
         size:'lg'
+    }
+}
+
+export const ExtraLarge: StoryObj<Props> = {
+    args:{
+        size:'xl'
     }
 }
 

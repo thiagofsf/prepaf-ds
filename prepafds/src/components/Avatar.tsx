@@ -9,7 +9,7 @@ export interface Props {
     image: string;
 }
 
-export function Avatar({ image = './public/assets/userIcon', size = 'md',} : Props ) {
+export function Avatar({ image = './assets/userIcon', size = 'md',} : Props ) {
 
     return(
         <img src = {image} className={clsx(

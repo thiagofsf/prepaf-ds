@@ -15,6 +15,12 @@ export default {
             control:{
                 type: 'inline-radio'
             }
+        },
+        align: {
+            options: ['left', 'center', 'right', 'justify'],
+            control:{
+                type: 'inline-radio'
+            }
         }
     }
 } as Meta<TextProps>
@@ -36,6 +42,30 @@ export const Small: StoryObj<TextProps> = {
 export const Large: StoryObj<TextProps> = {
     args:{
         size:'lg'
+    }
+}
+
+export const AlignLeft: StoryObj<TextProps> = {
+    args:{
+        align:'left'
+    }
+}
+
+export const AlignCenter: StoryObj<TextProps> = {
+    args:{
+        align:'center'
+    }
+}
+
+export const AlignRight: StoryObj<TextProps> = {
+    args:{
+        align:'right'
+    }
+}
+
+export const AlignJustify: StoryObj<TextProps> = {
+    args:{
+        align:'justify'
     }
 }
 
