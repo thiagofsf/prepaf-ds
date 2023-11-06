@@ -10,7 +10,12 @@ export default {
         type:'main'
     },
     argTypes:{
-       
+        size: {
+            options: ['sm', 'md', 'lg', 'auto', 'full'],
+            control:{
+                type: 'inline-radio'
+            }
+        },
     }
 } as Meta<ButtonProps>
 
@@ -25,5 +30,35 @@ export const Confirm: StoryObj<ButtonProps> = {
 export const Critical: StoryObj<ButtonProps> = {
     args:{
         type:'critical',
+    }
+}
+
+export const Small: StoryObj<ButtonProps> = {
+    args:{
+        size:'sm',
+    }
+}
+
+export const Medium: StoryObj<ButtonProps> = {
+    args:{
+        size:'md',
+    }
+}
+
+export const Large: StoryObj<ButtonProps> = {
+    args:{
+        size:'lg',
+    }
+}
+
+export const Auto: StoryObj<ButtonProps> = {
+    args:{
+        size:'auto',
+    }
+}
+
+export const Full: StoryObj<ButtonProps> = {
+    args:{
+        size:'full',
     }
 }
