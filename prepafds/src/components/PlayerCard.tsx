@@ -19,7 +19,7 @@ export function PlayerCard({children, photo = './assets/userIcon.svg', align = '
 
     const Comp = asChild ? Slot : 'span'
     return (
-        <div className="lg:w-1/4 md:w-1/3 sm:w-full transition-all rounded overflow-hidden">
+        <div className="w-full transition-all rounded overflow-hidden">
             {noPhoto ? <></>:(
             <div className="flex items-center justify-center py-6 bg-prepaf-orange">
                 <Avatar image = {photo} size='lg'></Avatar>

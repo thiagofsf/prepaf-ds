@@ -1,19 +1,18 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Footer, Props } from './Footer'
-import { Text} from './Text'
+import { ContainerPage, Props } from './ContainerPage'
 import { Heading } from './Heading'
+import { Text } from './Text'
 
 export default {
-    title: 'Components/Layout/Footer',
-    component: Footer,
+    title: 'Components/Layout/ContainerPage',
+    component: ContainerPage,
     tags: ['autodocs'],
     args: {
-        children:'Lorem ipsum.',
-        align:'right'
+        children:'Page Content',
     },
     argTypes:{
         align: {
-            options: ['left', 'center', 'right', 'justify'],
+            options: ['left', 'center', 'right'],
             control:{
                 type: 'inline-radio'
             }
@@ -41,15 +40,8 @@ export const AlignRight: StoryObj<Props> = {
     }
 }
 
-export const AlignJustify: StoryObj<Props> = {
-    args:{
-        align:'justify'
-    }
-}
-
 export const CustomComponent: StoryObj<Props> = {
     args:{
-        asChild: true,
         align: 'center',
         children:(
             <>
@@ -68,10 +60,5 @@ export const CustomComponent: StoryObj<Props> = {
                 disable:true,
             }
         },
-        asChild: {
-            table:{
-                disable:true,
-            }
-        }
     }
 }

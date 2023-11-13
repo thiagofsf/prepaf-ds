@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { Text, TextProps } from './Text'
 
 export default {
-    title: 'Components/Text',
+    title: 'Components/Text/Text',
     component: Text,
     tags: ['autodocs'],
     args: {
@@ -24,6 +24,12 @@ export default {
         },
         weight: {
             options: ['normal', 'semibold', 'bold'],
+            control:{
+                type: 'inline-radio'
+            }
+        },
+        type: {
+            options: ['default', 'green', 'red', 'treino', 'jogo', 'recuperacao', 'avaliacao', 'gray'],
             control:{
                 type: 'inline-radio'
             }

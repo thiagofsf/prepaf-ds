@@ -2,7 +2,7 @@ import { Meta, StoryObj } from '@storybook/react'
 import { Navbar, Props } from './Navbar'
 
 export default {
-    title: 'Components/Navbar',
+    title: 'Components/Layout/Navbar',
     component: Navbar,
     tags: ['autodocs'],
     args: {

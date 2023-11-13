@@ -23,7 +23,7 @@ export function Navbar({ logo = 'assets/logo.png', logolink='', links = '[{"labe
         <div className="flex justify-center w-screen max-w-full bg-gray-200 border-b border-prepaf-gray-600/10">
             <header className="flex items-center justify-between py-4 px-8 w-full max-w-[1200px]">
                 <div className="flex items-center w-full">
-                    <div className="flex-shrink-0 px-6">
+                    <div className="flex-shrink-0 pr-10 w-full max-w-[200px]">
                         <a href={logolink} ><img src={logo} /></a>
                     </div>
                     <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>

@@ -7,9 +7,7 @@ export default {
     component: TextInput.Root,
     tags: ['autodocs'],
     args: {
-        children: (<>
-                <TextInput.Input placeholder="Teste" />
-            </>),
+        children: (<TextInput.Input placeholder="Teste" />),
     },
     argTypes:{
         children: {
