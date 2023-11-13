@@ -1,16 +1,44 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { TextInput, TextInputProps, TextInputType } from './TextInput'
+import { TextInput, TextInputInputProps, TextInputRootProps } from './TextInput'
+import { IoMdSearch } from 'react-icons/io'
 
 export default {
     title: 'Components/TextInput',
-    component: TextInput,
+    component: TextInput.Root,
     tags: ['autodocs'],
     args: {
-        placeholder: 'Insira um texto'
+        children: (<>
+                <TextInput.Input placeholder="Teste" />
+            </>),
     },
     argTypes:{
-       
-    }
-} as Meta<TextInputProps>
+        children: {
+            table:{
+                disable: true,
+            }
+        },
+        color: {
+            options: ['default', 'gray'],
+            control:{
+                type: 'inline-radio'
+            }
+        },
+        type: {
+            options: ['default', 'search'],
+            control:{
+                type: 'inline-radio'
+            }
+        },
+    },
+    parameters: {
+        backgrounds: {
+          default: 'gray',
+          values: [
+            { name: 'gray', value: '#F8F8F8' },
+            { name: 'dark', value: 'rgb(51, 51, 51)' },
+          ],
+        },
+    },
+} as Meta<TextInputRootProps>
 
-export const Default: StoryObj<TextInputProps> = {}
+export const Default: StoryObj<TextInputRootProps> = {}

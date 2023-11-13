@@ -1,13 +1,13 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { Button, ButtonProps } from './Button'
+import { AvatarButton, ButtonProps } from './AvatarButton'
 
 export default {
-    title: 'Components/Buttons/Button',
-    component: Button,
+    title: 'Components/Buttons/AvatarButton',
+    component: AvatarButton,
     tags: ['autodocs'],
     args: {
-        children:'Button Text',
-        type:'main'
+        name:'Foca',
+        image: '/assets/userIcon.svg'
     },
     argTypes:{
         size: {
@@ -20,18 +20,6 @@ export default {
 } as Meta<ButtonProps>
 
 export const Default: StoryObj<ButtonProps> = {}
-
-export const Confirm: StoryObj<ButtonProps> = {
-    args:{
-        type:'confirm',
-    }
-}
-
-export const Critical: StoryObj<ButtonProps> = {
-    args:{
-        type:'critical',
-    }
-}
 
 export const Small: StoryObj<ButtonProps> = {
     args:{

@@ -21,6 +21,12 @@ export default {
             control:{
                 type: 'inline-radio'
             }
+        },
+        weight: {
+            options: ['normal', 'semibold', 'bold'],
+            control:{
+                type: 'inline-radio'
+            }
         }
     }
 } as Meta<TextProps>

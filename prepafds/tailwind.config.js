@@ -18,7 +18,8 @@ export default {
       'prepaf-orange':'#F79F4F',
       'prepaf-yellow':'#FFDE33',
       //white
-      'white': '#ffffff',
+      white: '#ffffff',
+      transparent: 'transparent',
       black:{
         800:'#1E1E1E',
         1000:'#000000',

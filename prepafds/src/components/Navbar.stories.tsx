@@ -9,6 +9,9 @@ export default {
         logo:'./assets/logo.png',
         logolink:'',
         links:'[{"label": "Jogadores", "href": "/", "id": "jogadores"},{"label": "Atividades", "href": "/", "id": "atividades"},{"label": "Relatório", "href": "/", "id": "relatorio"}]',
+        avatarbutton: true,
+        avatarimage: '/assets/foca.png',
+        avatarname: 'Foca Silva'
     },
     argTypes:{
     }
