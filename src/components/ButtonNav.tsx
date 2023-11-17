@@ -1,5 +1,4 @@
 import { clsx } from "clsx";
-import { Slot } from "@radix-ui/react-slot";
 import { ReactNode } from "react";
 
 import { IoCaretForward } from "react-icons/io5";
