@@ -7,7 +7,7 @@ export default {
     tags: ['autodocs'],
     args: {
         children:'Button Text',
-        type:'main'
+        type:'main',
     },
     argTypes:{
         size: {
@@ -60,5 +60,12 @@ export const Auto: StoryObj<ButtonProps> = {
 export const Full: StoryObj<ButtonProps> = {
     args:{
         size:'full',
+    }
+}
+
+export const Action: StoryObj<ButtonProps> = {
+    args:{
+        size:'full',
+        onclick: ()=>{alert('teste')},
     }
 }

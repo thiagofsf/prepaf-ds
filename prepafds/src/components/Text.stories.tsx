@@ -28,12 +28,6 @@ export default {
                 type: 'inline-radio'
             }
         },
-        type: {
-            options: ['default', 'green', 'red', 'treino', 'jogo', 'recuperacao', 'avaliacao', 'gray'],
-            control:{
-                type: 'inline-radio'
-            }
-        }
     }
 } as Meta<TextProps>
 

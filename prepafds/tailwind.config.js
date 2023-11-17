@@ -36,7 +36,7 @@ export default {
         500:'#22B4D8',
       },
       yellow:{
-        200:'#FEBAD',
+        200:'#F7EBAD',
       },
       orange:{
         200:'#FEB470',

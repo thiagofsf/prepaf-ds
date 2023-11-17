@@ -3,7 +3,7 @@ import { TextInput, TextInputInputProps, TextInputRootProps } from './TextInput'
 import { IoMdSearch } from 'react-icons/io'
 
 export default {
-    title: 'Components/TextInput',
+    title: 'Components/Form/TextInput',
     component: TextInput.Root,
     tags: ['autodocs'],
     args: {

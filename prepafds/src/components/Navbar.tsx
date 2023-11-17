@@ -1,7 +1,4 @@
-import { clsx } from "clsx";
-import { Slot } from "@radix-ui/react-slot";
-import { JSXElementConstructor, ReactElement, ReactNode, ReactPortal, useState } from "react";
-import { Text } from "./Text";
+import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { IoMdCloseCircle } from "react-icons/io";
 import { AvatarButton } from "./AvatarButton";
@@ -40,86 +37,9 @@ export function Navbar({ logo = 'assets/logo.png', logolink='', links = '[{"labe
                             <div className="flex flex-grow md:justify-end justify-center">
                                 {avatarbutton?(<AvatarButton image = {avatarimage} name = {avatarname} />):(<></>)}
                             </div>
-                        </ul>
-                        
-                        
-                    </nav>
-                    
-                </div>
-                {/* 
-                <div className="flex items-center gap-4">
-                    <nav className="select-none">
-                        <button
-                            className="md:hidden flex items-center gap-2 h-fit p-0.5
-                            bg-prepaf-orange-400 hover:bg-prepaf-orange-200 text-white transition-colors"
-                            onBlur={() =>
-                                setTimeout(() => setShowMenu(false), 100)
-                            }
-                            onMouseDown={() => {
-                                setShowMenu(!showMenu);
-                            }}
-                        >
-                            {showMenu ? (
-                                <Icon icon="fe:close" width={25} />
-                            ) : (
-                                <Icon icon="ci:hamburger-md" width={25} />
-                            )}
-                        </button>
-                        <ul
-                            className={`${
-                                showMenu
-                                    ? "h-fit pt-1"
-                                    : "h-0 py-0 m-0 border-0"
-                            } flex flex-col justify-center items-center w-fit absolute z-10 mt-6 rounded
-                        overflow-hidden transition-all border border-t-0 rounded-t-none border-prepaf-gray-600/10
-                        bg-prepaf-gray-200 top-[58px] select-none`}
-                        >
-                            <li className="w-full">
-                                <Link
-                                    className={`flex justify-center py-2 px-4 hover:bg-gray-100 
-                                    ${
-                                        pathname == "/players" &&
-                                        "text-prepaf-orange-400"
-                                    }`}
-                                    to="/players"
-                                >
-                                    Jogadores
-                                </Link>
-                            </li>
-                            <li className="w-full ">
-                                <Link
-                                    className={`flex justify-center py-2 px-4 hover:bg-gray-100
-                                    ${
-                                        pathname == "/activities" &&
-                                        "text-prepaf-orange-400"
-                                    }`}
-                                    to="/activities"
-                                >
-                                    Atividades
-                                </Link>
-                            </li>
-                            <li className="w-full">
-                                <Link
-                                    className={`flex gap-1 items-center justify-center py-2 px-4 hover:bg-gray-100 
-                                    ${
-                                        pathname == "/" &&
-                                        "text-prepaf-orange-400"
-                                    }`}
-                                    to="/"
-                                >
-                                    Relatórios
-                                    <Icon
-                                        icon="bxs:down-arrow"
-                                        width="10"
-                                        height="10"
-                                    />
-                                </Link>
-                            </li>
-                        </ul>
-                        
+                        </ul> 
                     </nav>
                 </div>
-                */}
             </header>
         </div>
     );

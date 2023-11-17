@@ -14,6 +14,7 @@ export default {
         avatarname: 'Foca Silva'
     },
     argTypes:{
+
     }
 } as Meta<Props>
 

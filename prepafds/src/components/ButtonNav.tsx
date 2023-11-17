@@ -2,20 +2,23 @@ import { clsx } from "clsx";
 import { Slot } from "@radix-ui/react-slot";
 import { ReactNode } from "react";
 
-export interface ButtonProps {
+import { IoCaretForward } from "react-icons/io5";
+import { IoCaretBack } from "react-icons/io5";
+import { IoCaretDown } from "react-icons/io5";
+import { IoCaretUp } from "react-icons/io5";
+
+export interface ButtonNavProps {
     type?: 'main' | 'confirm' | 'critical';
     size?: 'sm' | 'md' | 'lg' | 'auto' | 'full';
-    children: ReactNode;
-    asChild?: boolean;
+    direction?:'up' | 'down' | 'forward' | 'back' ;
     onclick?: () => void;
 }
 
-export function Button({ type= 'main', size = 'full', onclick, children, asChild } : ButtonProps ) {
+export function ButtonNav({ type= 'main', size = 'auto', direction = 'forward', onclick } : ButtonNavProps ) {
 
-    const Comp = asChild ? Slot : 'button'
     return(
-        <Comp onClick = {onclick} className={clsx(
-            'py-4 px-3 font-bold text-white text-md rounded transition-colors focus:ring-2 ring-black-800',
+        <button onClick = {onclick} className={clsx(
+            'py-2 px-2 font-bold text-white text-2xl rounded transition-colors focus:ring-2 ring-black-800',
             {
                 'bg-prepaf-orange': type == 'main',
                 'hover:bg-orange-200': type == 'main',
@@ -29,7 +32,11 @@ export function Button({ type= 'main', size = 'full', onclick, children, asChild
                 'w-full': size == 'full',
             }
         )}>
-            {children}
-        </Comp>
+            {(direction == 'up')?(<IoCaretUp />):(
+                (direction == 'down')?(<IoCaretDown />):(
+                    (direction == 'forward')?(<IoCaretForward />):(<IoCaretBack />)
+                )
+            )}
+        </button>
     )
 }

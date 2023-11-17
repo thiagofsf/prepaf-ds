@@ -4,7 +4,7 @@ import React from 'react'
 import { Text } from './Text'
 
 export default {
-    title: 'Components/PlayerCard',
+    title: 'Components/Cards/PlayerCard',
     component: PlayerCard,
     tags: ['autodocs'],
     args: {
