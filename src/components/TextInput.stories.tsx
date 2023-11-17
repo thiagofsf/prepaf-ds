@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
-import { TextInput, TextInputInputProps, TextInputRootProps } from './TextInput'
-import { IoMdSearch } from 'react-icons/io'
+import { TextInput, TextInputRootProps } from './TextInput'
 
 export default {
     title: 'Components/Form/TextInput',

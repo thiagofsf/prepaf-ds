@@ -1,8 +1,4 @@
 import { clsx } from "clsx";
-import { Slot } from "@radix-ui/react-slot";
-import React from 'react';
-
-
 
 export interface Props {
     size?: 'xs' | 'sm' | 'md' | 'lg' | 'xl';

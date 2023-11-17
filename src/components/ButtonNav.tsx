@@ -1,5 +1,4 @@
 import { clsx } from "clsx";
-import { ReactNode } from "react";
 
 import { IoCaretForward } from "react-icons/io5";
 import { IoCaretBack } from "react-icons/io5";

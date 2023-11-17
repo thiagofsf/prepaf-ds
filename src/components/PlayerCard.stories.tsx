@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
 import { PlayerCard, Props } from './PlayerCard'
-import React from 'react'
 import { Text } from './Text'
 
 export default {

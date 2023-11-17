@@ -1,7 +1,5 @@
 import { clsx } from "clsx";
-import { Slot } from "@radix-ui/react-slot";
-import { ReactNode, useState } from "react";
-import {Text} from './Text';
+import { useState } from "react";
 
 export interface Props {
     links: string;

@@ -1,6 +1,5 @@
 import { Meta, StoryObj } from '@storybook/react'
 import { CalendarNav, Props } from './CalendarNav'
-import { useState } from 'react';
 
 
 export default {

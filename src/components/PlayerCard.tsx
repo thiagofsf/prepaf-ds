@@ -1,7 +1,6 @@
-import React, { ReactNode } from 'react';
+import { ReactNode } from 'react';
 import { clsx } from "clsx";
 import { Avatar } from './Avatar';
-import { Heading } from './Heading';
 import {Text} from './Text';
 import { Slot } from "@radix-ui/react-slot";
 
@@ -17,7 +16,6 @@ export interface Props {
 
 export function PlayerCard({children, photo = './assets/userIcon.svg', align = 'center', asChild, noPhoto, title, noTitle}: Props) {
 
-    const Comp = asChild ? Slot : 'span'
     return (
         <div className="w-full transition-all rounded overflow-hidden">
             {noPhoto ? <></>:(
