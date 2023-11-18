@@ -17,12 +17,6 @@ const config: StorybookConfig = {
   docs: {
     autodocs: "tag",
   },
-  viteFinal: (config, {configType}) =>{
-    if (configType === 'PRODUCTION') {
-      config.base = '/prepaf-ds/'
-    }
-    return config
-  } 
 };
 
 export default config;
