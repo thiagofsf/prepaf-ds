@@ -7,7 +7,7 @@ export default {
     tags: ['autodocs'],
     args: {
         name:'Foca',
-        image: '/assets/userIcon.svg'
+        image: './assets/userIcon.svg'
     },
     argTypes:{
         size: {

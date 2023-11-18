@@ -9,7 +9,7 @@ export interface ButtonProps {
     name?: string;
 }
 
-export function AvatarButton({ size = 'auto', name = 'User', image = '/assets/userIcon.svg'} : ButtonProps ) {
+export function AvatarButton({ size = 'auto', name = 'User', image = './assets/userIcon.svg'} : ButtonProps ) {
 
     const Comp = 'button'
     return(
