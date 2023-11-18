@@ -17,7 +17,7 @@ const config: StorybookConfig = {
   },
   viteFinal: (config, {configType}) =>{
     if (configType === 'PRODUCTION') {
-      config.base = './prepaf-ds/'
+      config.base = '/prepaf-ds/'
     }
     return config
   }
