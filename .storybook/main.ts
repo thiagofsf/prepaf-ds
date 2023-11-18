@@ -1,4 +1,6 @@
 import type { StorybookConfig } from "@storybook/react-vite";
+import type { StorybookConfigVite } from "@storybook/builder-vite";
+import { mergeConfig } from "vite";
 
 const config: StorybookConfig = {
   stories: ["../src/**/*.mdx", "../src/**/*.stories.@(js|jsx|mjs|ts|tsx)"],
@@ -20,6 +22,7 @@ const config: StorybookConfig = {
       config.base = '/prepaf-ds/'
     }
     return config
-  }
+  } 
 };
+
 export default config;
