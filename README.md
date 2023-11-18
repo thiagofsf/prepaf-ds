@@ -1,11 +1,18 @@
 # PRESIGN - Prepaf Design System
 
-This is an library of components developed for PREPAF following the Design System Project developed by Thiago Freitas
+This is an library of components developed for PREPAF.
+The components were built following the Design System Project developed by Thiago Freitas
 
-# Dependencies
+# Use
+
+Download all the source and from the folder execute
 
 ```bash
-
-npm install react-icons --save
-
+npm install
 ```
+or
+```bash
+yarn install
+```
+To install dependencies
+
