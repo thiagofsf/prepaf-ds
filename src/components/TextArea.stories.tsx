@@ -6,7 +6,7 @@ export default {
     component: TextArea.Root,
     tags: ['autodocs'],
     args: {
-        children: (<TextArea.Input placeholder="Texto teste para input" />),
+        children: (<TextArea.Input placeholder={"Texto teste para input"} />),
     },
     argTypes:{
         children: {
