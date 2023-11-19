@@ -1,5 +1,6 @@
 import Select from "react-select";
 import makeAnimated from "react-select/animated";
+import clsx from "clsx";
 
 type Data = {
     label: string;
@@ -50,15 +51,23 @@ export function MultiSelect({ data, ...props }: Props) {
                     multiValueLabel: () => "p-2",
                     multiValueRemove: () =>
                         "px-1.5 ml-2 rounded-r transition-colors hover:bg-orange-200",
-                    option: ({ isSelected, data }) =>
-                        `bg-white px-6 py-2 hover:cursor-pointer hover:bg-yellow-200  ${
-                            isSelected && !data.color
-                                ? " before:content-['✔'] before:mr-2.5 before:text-green-300"
-                                : ` flex items-center ${dot(data.color)}`
-                        } `,
-                    placeholder: () => "text-gray-500 p-2",
-                    singleValue: ({ data }: { data: Data }) =>
-                        `flex items-center ${dot(data.color)}`,
+                    option: ({ isSelected, data }) => clsx('bg-white px-6 py-2 hover:cursor-pointer hover:bg-yellow-200 text-md font-medium',{
+                        " before:content-['✔'] before:mr-2.5 before:text-green-300 font-bold text-md": isSelected == true,
+                        "flex items-center": isSelected == false,
+                        "text-jogo": data.color == 'jogo',
+                        "text-avaliacao": data.color == 'avaliacao',
+                        "text-recuperacao": data.color == 'recuperacao',
+                        "text-treino": data.color == 'treino',
+                        "text-black-800": data.color == 'default',
+                    }),
+                    placeholder: () => "text-md text-gray-500 font-medium py-2",
+                    singleValue: ({ data }: { data: Data }) => clsx('flex items-center py-2 text-md font-medium',{
+                        "text-jogo": data.color == 'jogo',
+                        "text-avaliacao": data.color == 'avaliacao',
+                        "text-recuperacao": data.color == 'recuperacao',
+                        "text-treino": data.color == 'treino',
+                        "text-black-800": data.color == 'default',
+                    }),
                 }}
             />
         </>

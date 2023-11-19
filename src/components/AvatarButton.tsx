@@ -22,7 +22,7 @@ export function AvatarButton({ size = 'auto', name = 'User', image = './assets/u
                 'w-full': size == 'full',
             }
         )}>
-            <Text size="sm" weight="medium"><p className="font-semibold">{name}</p></Text>
+            <Text size="sm" weight="medium"><p className="font-semibold text-black-1000">{name}</p></Text>
             <Avatar image={image} size="xs"></Avatar>
             <IoMdArrowDropdown className="text-black-1000"/>
         </Comp>

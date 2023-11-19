@@ -19,7 +19,7 @@ export function CalendarDayContainer({ day = 1, children, onclick, disabled} : P
     }
     return(
         <div onClick = {clickfunction} className={clsx(
-            'py-2 px-2 font-bold transition-all bg-gray-100 w-full max-w-[200px] flex items-center flex-col min-h-[200px] z-40',
+            'py-2 px-2 font-bold transition-all bg-gray-100 w-full max-w-[200px] flex items-center flex-col min-h-[200px]',
             {
                 'hover:bg-yellow-200': !disabled == true,
                 'text-gray-600': disabled == true,

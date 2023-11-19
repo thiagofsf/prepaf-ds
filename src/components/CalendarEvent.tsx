@@ -14,7 +14,7 @@ export function CalendarEvent({ title = 'título', starts = '08:00', ends = '10:
 
     return(
         <div onClick = {onclick} className={clsx(
-            'py-1 px-2 font-bold text-md rounded transition-colors w-full z-50',
+            'py-1 px-2 font-bold text-md rounded transition-colors w-full',
             {
                 'bg-prepaf-orange hover:bg-prepaf-orange/80': type == 'main',
                 'bg-treino hover:bg-treino/80': type == 'treino',
