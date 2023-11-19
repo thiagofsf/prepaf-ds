@@ -8,6 +8,7 @@ export default {
     args: {
         children:'Lorem ipsum.',
         size:'md',
+        className:'text-black-1000',
     },
     argTypes:{
         size: {
@@ -72,6 +73,12 @@ export const AlignRight: StoryObj<TextProps> = {
 export const AlignJustify: StoryObj<TextProps> = {
     args:{
         align:'justify'
+    }
+}
+
+export const AttributeClass: StoryObj<TextProps> = {
+    args:{
+        className:'text-prepaf-orange'
     }
 }
 

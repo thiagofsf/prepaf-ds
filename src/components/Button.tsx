@@ -10,12 +10,12 @@ export interface ButtonProps {
     onclick?: () => void;
 }
 
-export function Button({ type= 'main', size = 'full', onclick, children, asChild } : ButtonProps ) {
+export function Button({ type= 'main', size = 'full', onclick, children, asChild} : ButtonProps ) {
 
     const Comp = asChild ? Slot : 'button'
     return(
         <Comp onClick = {onclick} className={clsx(
-            'py-4 px-3 font-bold text-white text-md rounded transition-colors focus:ring-2 ring-black-800',
+            'py-4 px-3 font-bold text-white text-md rounded transition-colors focus:ring-2 ring-black-800 flex justify-center',
             {
                 'bg-prepaf-orange': type == 'main',
                 'hover:bg-orange-200': type == 'main',

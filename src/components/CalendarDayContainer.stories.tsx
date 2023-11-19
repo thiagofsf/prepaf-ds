@@ -11,7 +11,6 @@ export default {
         day: new Date().getDay(),
     },
     argTypes:{
-        
     }
 } as Meta<Props>
 
@@ -20,6 +19,13 @@ export const Default: StoryObj<Props> = {}
 export const Action: StoryObj<Props> = {
     args:{
         onclick: ()=>{alert('Click in Day Calendar')},
+    }
+}
+
+export const Disabled: StoryObj<Props> = {
+    args:{
+        disabled:true,
+        onclick:()=>(alert('teste')),
     }
 }
 

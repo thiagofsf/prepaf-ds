@@ -69,3 +69,24 @@ export const Action: StoryObj<ButtonProps> = {
         onclick: ()=>{alert('teste')},
     }
 }
+
+export const CustomComponent: StoryObj<ButtonProps> = {
+    args:{
+        asChild: true,
+        children:(
+            <a href='/'>Carregue o botão como um componente que desejar</a>
+        ),
+    },
+    argTypes: {
+        children:{
+            table:{
+                disable:true,
+            }
+        },
+        asChild: {
+            table:{
+                disable:true,
+            }
+        }
+    }
+}

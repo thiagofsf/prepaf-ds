@@ -6,16 +6,26 @@ import { Text } from "./Text";
 export interface Props {
     day?: number;
     children?: ReactNode;
+    disabled?: boolean;
     onclick?: () => void;
 }
 
-export function CalendarDayContainer({ day = 1, children, onclick } : Props ) {
-
+export function CalendarDayContainer({ day = 1, children, onclick, disabled} : Props ) {
+    let clickfunction;
+    if(!disabled){
+        clickfunction = onclick;
+    } else{
+        clickfunction = undefined;
+    }
     return(
-        <div onClick = {onclick} className={clsx(
-            'py-2 px-2 font-bold transition-all bg-gray-100 hover:bg-yellow-200 w-full max-w-[200px] flex items-center flex-col min-h-[200px] z-40',
+        <div onClick = {clickfunction} className={clsx(
+            'py-2 px-2 font-bold transition-all bg-gray-100 w-full max-w-[200px] flex items-center flex-col min-h-[200px] z-40',
+            {
+                'hover:bg-yellow-200': !disabled == true,
+                'text-gray-600': disabled == true,
+            }
         )}>
-            <Text size = "md" weight="medium" align="center"><p className="pb-2">{day}</p></Text>
+            <Text size = "md" weight="medium" align="center" className="pb-2">{day}</Text>
             {children}
         </div>
     )

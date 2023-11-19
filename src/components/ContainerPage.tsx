@@ -11,7 +11,7 @@ export function ContainerPage({children, align = 'left', className = ''}: Props)
 
     return (
         <div className={clsx(
-            'w-full max-w-[1200px] p-5 flex',
+            'w-full max-w-[1200px] p-1 flex',
             {
                 'justify-center': align == 'center',
                 'justify-start': align == 'left',

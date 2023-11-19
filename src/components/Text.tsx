@@ -8,9 +8,10 @@ export interface TextProps {
     weight?: 'normal' | 'medium' | 'bold';
     children: ReactNode;
     asChild?: boolean;
+    className?: string;
 }
 
-export function Text({ size = 'md', align = 'right', weight = 'normal', children, asChild } : TextProps ) {
+export function Text({ size = 'md', align = 'right', weight = 'normal', children, asChild, className } : TextProps ) {
 
     const Comp = asChild ? Slot : 'span'
     return(
@@ -28,7 +29,7 @@ export function Text({ size = 'md', align = 'right', weight = 'normal', children
                 'font-normal': weight == 'normal',
                 'font-semibold': weight == 'medium',
                 'font-bold': weight == 'bold',
-            }
+            }, className
         )}>
             {children}
         </Comp>
