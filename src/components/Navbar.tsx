@@ -2,6 +2,7 @@ import { useState } from "react";
 import { IoIosMenu } from "react-icons/io";
 import { IoMdCloseCircle } from "react-icons/io";
 import { AvatarButton } from "./AvatarButton";
+import { LogoImg } from "./LogoImg";
 export interface Props {
     logo?: string;
     logolink?:string;
@@ -21,7 +22,7 @@ export function Navbar({ logo = 'assets/logo.png', logolink='', links = '[{"labe
             <header className="flex items-center justify-between py-4 px-8 w-full max-w-[1200px]">
                 <div className="flex items-center w-full">
                     <div className="flex-shrink-0 pr-10 w-full max-w-[200px]">
-                        <a href={logolink} ><img src={logo} /></a>
+                        {(!logolink)?(<LogoImg link={logolink} image={logo} size="full"></LogoImg>):(<LogoImg noLink image={logo} size="full"></LogoImg>)}
                     </div>
                     <div onClick={()=>setOpen(!open)} className='text-3xl absolute right-8 top-6 cursor-pointer md:hidden'>
                         {open?<IoMdCloseCircle className="text-prepaf-orange" />:<IoIosMenu className="text-prepaf-orange"/>}
