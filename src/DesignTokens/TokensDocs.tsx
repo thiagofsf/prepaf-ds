@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import '../styles/global.css';
-import { colorsTokens, tokens, secondTokens } from "../tokens/Tokens";
+import { tokens, secondTokens } from "../tokens/Tokens";
 import { Text } from "../components/Text";
 
 
