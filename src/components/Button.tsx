@@ -17,7 +17,7 @@ export function Button({ type= 'main', size = 'full', onclick, children, asChild
         <Comp onClick = {onclick} className={clsx(
             'py-4 px-3 font-bold text-white text-md rounded transition-colors focus:ring-2 ring-black-800 flex justify-center',
             {
-                'bg-prepaf-orange': type == 'main',
+                'bg-primary': type == 'main',
                 'hover:bg-orange-200': type == 'main',
                 'bg-green-400': type == 'confirm',
                 'hover:bg-green-300': type == 'confirm',

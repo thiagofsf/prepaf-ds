@@ -45,23 +45,4 @@ export const ExtraLarge: StoryObj<Props> = {
     }
 }
 
-/*export const CustomComponent: StoryObj<Props> = {
-    args:{
-        asChild: true,
-        children:(
-            <p>Passe um elemento ou componente react para garantir configuração automática nas propriedades do componente</p>
-        ),
-    },
-    argTypes: {
-        children:{
-            table:{
-                disable:true,
-            }
-        },
-        asChild: {
-            table:{
-                disable:true,
-            }
-        }
-    }
-}*/
+/**/

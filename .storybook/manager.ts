@@ -4,4 +4,5 @@ import prepafTheme from './prepafTheme'
 
 addons.setConfig({
     theme:prepafTheme,
+    showPanel: true,
 })

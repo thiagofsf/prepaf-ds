@@ -2,7 +2,12 @@
 @tailwind utilities;
 @tailwind components;
 
+/**
+* @tokens Colors
+* @presenter Color
+*/
 :root {
+
         /*Visual Identity Colors*/
         --prepaf-orange:  #F79F4F;
         --prepaf-yellow:  #FFDE33;
@@ -20,14 +25,30 @@
         --gray-500:       #B9B9B9;
         --gray-600:       #848484;
         /*BLUE*/
+        --blue-400:       #09BFD8;
         --blue-500:       #22B4D8;
         /*YELLOW*/
         --yellow-200:     #F7EBAD;
+        --yellow-800:     #E0BB00;
         /*ORANGE*/
         --orange-200:     #FEB470;
+        --orange-400:     #EE923D;
+        /*GREEN*/
+        --green-200:      #A5DF28;
         --green-300:      #A5DF28;
         --green-400:      #9ED130;
         /*RED*/
-        r--ed-600:        #E93D32;
+        --red-600:        #E93D32;
         --red-800:        #CE2D23;
+
+        /*SECONDARY*/
+        --primary: var(--prepaf-orange);
+        --secondary: var(--prepaf-yellow);
+        --treino: var(--yellow-800);
+        --jogo: var(--green-200);
+        --avaliacao:var(--orange-400);
+        --recuperacao: var(--blue-400);
 }
+/**
+* @tokens-end
+*/
